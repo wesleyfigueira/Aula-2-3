@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Aula 4</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+
+    <header>
+        <p>Figueira Farma </p>
+        <div class="ancorasCabeça">
+            <a href="#">Home</a>
+            <a href="https://www.gov.br/anvisa/pt-br/assuntos/medicamentos" target="_blank">Anvisa</a>
+            <a href="https://www.crfpe.org.br/" target="_blank">CRF-PE</a>
+            <a href="https://www.walgreens.com/"target="_blank"> Nosso Parceiro </a>
+        </div>
+    </header>
+    <hr>
+    <div class="mainTable">
+        <table>
+            <thead>
+                <th>Classe</th>
+                <th>Nome Comercial</th>
+                <th>Principio Ativo</th>
+                <th>Indicação Terapêutica</th>
+                <th>Preço Medio</th>
+                <th>Foto</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="medicamento.html">Androgênios</a></td>
+                    <td>durateston</td>
+                    <td>Decanoato de testosterona,Isocaproato de Testosterona,Fempropionato de Testosterona,Propionato de Testosterona</td>
+                    <td>Insuficiência Testicular<br> Andropausa</td>
+                    <td>R$ 50,00</td>
+                    <td>
+                        <img class="photo" src="imagens/17112402_Durateston.jpg.jpg" alt="durateston">
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="medicamento.html">Antibióticos</a></td>
+                    <td>Azi<br>Zitromax<br>Astro</td>
+                    <td>Azitromicina</td>
+                    <td>Infecções em Geral<br>Clamidia<br>Granuloma Inguinal</td>
+                    <td>R$ 15,00</td>
+                    <td > <img class="photo" src="imagens/azitromicina__1793.jpg" alt="azitromicina"></td>
+                </tr>
+                <tr>
+                    <td><a href="medicamento.html">Antidisfunção Erétil</a></td>
+                    <td>Viagra<br>Ravetio<br>Dejavu<br>Ah-zul<br>Tantrix<br>Sollevare<br>Escitan<br>Vasifil</td>
+                    <td>Citrato de Sildenafila</td>
+                    <td>Impotencia Sexual</td>
+                    <td>R$30,00</td>
+                    <td><img class="photo" src="imagens/viagra.jpeg" alt="Viagra"></td>
+                </tr>
+                <tr>
+                    <td><a href="medicamento.html">Anti-Inflamatorios</a></td>
+                    <td>Nisulid<br>Nizuil</td>
+                    <td>Nimesulida</td>
+                    <td>Febre em geral<br>Inflamaçoes em geral<br>Dor em Geral</td>
+                    <td>R$20,00</td>
+                    <td><img class="photo" src="imagens/2310_nisulid-100mg-caixa-com-12-comprimidos-p7896658005121_l1_637217813564998005.jpg" alt="Nisulid"></td>
+                </tr>
+                <tr>
+                    <td><a href="medicamento.html">Benzodiazepínicos</a></td>
+                    <td>Rivotril</td>
+                    <td>Clonazepam</td>
+                    <td>Transtorno Bipolar<br>Ansiedade<br>Convulsões<br>Epilepsia</td>
+                    <td>R$30,00</td>
+                    <td><img class="photo" src="imagens/19086_rivotril-2mg-caixa-com-30-comprimidos-p7896226502410_l1_637217825484103578.jpg" alt="rivotril"></td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <div class="bodii">
+        <div class="container">
+            <div class="formImage">
+                <img src="imagens/undraw_Add_to_cart_re_wrdo.png" alt="checkout">
+            </div>
+            <div class="form">
+                <form action="#">
+                    <div class="formHeader">
+                        <div class="title">
+                            <h1>Compre & receba em casa</h1>
+                        </div>
+                    </div>
+                    <div class="inputGroup">
+                        <div class="inputbox">
+                            <label for="Medicamentos">Produtos*</label>
+                            <select class="formu" name="medicamentos" id="medicamentos">
+                        
+                                <optgroup label="Controlados">
+                                    <option value="1">durateston</option>
+                                    <option value="2">Rivotril</option>
+                                </optgroup>
+                        
+                                <optgroup label="Antibioticos">
+                                    <option value="3">Azi</option>
+                                </optgroup>
+                        
+                                <optgroup label="Outros">
+                                    <option value="4">Nisulid</option>
+                                    <option value="5">Viagra</option>
+                        
+                                </optgroup>
+                            </select><br>
+                            <label for="nome">Nome*</label>
+                            <input class="formu" required placeholder="Digite o seu nome..." id="nome" name="nome" /><br>
+                            <label for="email">Email*</label>
+                            <input class="formu" required placeholder="Digite o seu Email..." type="text" id="email" name="email" /><br>
+                            <label for="endereço">Endereço*</label>
+                            <input required placeholder="Rua Medicamento N,10..." type="text" id="endereço" name="endereço" /><br>
+        
+                           <div class="pagamento">
+                               <label for="compra">Pix</label>
+                               <input id="radio" type="radio" name="compra" value="2"><br>
+                               <label for="compra">Cartão</label>
+                               <input class="formu" type="radio" name="compra" value="1">
+                           </div>
+                        </div>
+                    </div>
+                    <div class="comprarButton">
+                        <button><a>Comprar</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  
+
+</body>
+</html>

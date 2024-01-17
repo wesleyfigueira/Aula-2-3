@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3,4 Formularios</title>
+    <link rel="styles" href="style/style.css"/>
+</head>
+<body>
+    <h1>Formulario Continuação e tabelas</h1>
+
+
+    <!-- Metodos HTTP:
+     POST=criar algo/registro
+     GET= pegar algo/ recuperar
+     por padrão o metodo do formulario já é GET-->
+
+
+    <form method="" action="">
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome"/>
+        <br>
+
+        <label for="idade">Idade</label>
+        <input type="number" id="idade" name="idade" />
+        <br>
+
+        <button>Enviar</button>
+    </form>
+
+    <h1>Mais inputs</h1>
+    <form>
+        <label>Frutas</label>
+        <select name="frutas" id="frutas">
+            <option disabled selected >Selecione uma Fruta</option>
+            <option value="1">Caju</option>
+            <option value="2">Amora</option>
+            <option value="3">Manga</option>
+            <option value="4"> Abacate</option>
+        </select>
+        <button>Enviar</button>
+
+        <hr>
+
+        <label for="produtos">Produtos</label>
+        <select name="produtos" id="produtos">
+            <optgroup label="leite(derivados)">
+                <option value="5">Queijo</option>
+                <option value="6">iorgute</option>
+                <option value="7">bolo</option>
+                <option value="8">besteira</option>
+            </optgroup>
+
+            <optgroup label="outra coisa(derivados)">
+                <option value="9">Queijo</option>
+                <option value="10">iorgute</option>
+                <option value="11">bolo</option>
+                <option value="12">besteira</option>
+            </optgroup>
+
+        </select>
+        <br>
+        <textarea placeholder="Type Your text" rows="10" ></textarea>
+    </form>
+
+
+    <h1>----- Tabelas -----</h1>
+
+    <table border="1">
+        <tr>
+            <td>contéudo</td>
+            <td>contéudo</td>
+            <td>contéudo</td>
+        </tr>
+        <tr>
+            <td>contéudo</td>
+            <td>contéudo</td>
+            <td>contéudo</td>
+        </tr>
+        <tr>
+            <td>contéudo</td>
+            <td>contéudo</td>
+            <td>contéudo</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h1>Exemplo mais real </h1>
+    <table border="1">
+        <thead>
+            <th>ID</th>
+            <th>Titulo</th>
+            <th>SUb-titulo</th>
+            <th>Autor</th>
+            <th>Conteudo</th>
+            <th>Ação</th>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>ID</td>
+                <td>Titulo</td>
+                <td>Sub-titulo</td>
+                <td>Autor</td>
+                <td>Lorem ipsum dolor </td>
+                <td><button>Editar</button></td>
+            </tr>
+
+            <tr>
+                <td>ID</td>
+                <td>Titulo</td>
+                <td>Sub-titulo</td>
+                <td>Autor</td>
+                <td>Lorem ipsum dolor </td>
+                <td><button>Editar</button></td>
+            </tr>
+
+            <tr>
+                <td>ID</td>
+                <td>Titulo</td>
+                <td>Sub-titulo</td>
+                <td>Autor</td>
+                <td>Lorem ipsum dolor </td>
+                <td><button>Editar</button></td>
+            </tr>
+        </tbody>
+
+    </table>
+    <hr>
+    <hr>
+    <hr>
+
+
+
+
+    <h1>CSS</h1>
+    <div>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contacts</a>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis debitis ducimus accusantium architecto, reiciendis nesciunt praesentium doloremque dolorem, quod labore odit tempore nobis! Vitae consectetur blanditiis veniam, architecto eos sapiente.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis debitis ducimus accusantium architecto, reiciendis nesciunt praesentium doloremque dolorem, quod labore odit tempore nobis! Vitae consectetur blanditiis veniam, architecto eos sapiente.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis debitis ducimus accusantium architecto, reiciendis nesciunt praesentium doloremque dolorem, quod labore odit tempore nobis! Vitae consectetur blanditiis veniam, architecto eos sapiente.</p>
+    </div>
+
+    <div id="itens">
+        <h1>lista</h1>
+        <ul>
+            <li>Meu Item</li>
+            <li>Meu Item</li>
+            <li>Meu Item</li>
+            <li>Meu Item</li>
+        </ul>
+    </div>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<label for="Medicamentos">Produtos*</label>
+<select class="formu" name="medicamentos" id="medicamentos">
+
+    <optgroup label="Controlados">
+        <option value="1">durateston</option>
+        <option value="2">Rivotril</option>
+    </optgroup>
+
+    <optgroup label="Antibioticos">
+        <option value="3">Azi</option>
+    </optgroup>
+
+    <optgroup label="Outros">
+        <option value="4">Nisulid</option>
+        <option value="5">Viagra</option>
+
+    </optgroup>    
+</select><br>
+<label for="nome">Nome*</label>
+<input class="formu" required placeholder="Digite o seu nome..." id="nome" name="nome"/><br>
+<label for="email">Email*</label>
+<input class="formu" required placeholder="Digite o seu Email..."  type="text" id="email" name="email"/><br>
+<label for="endereço">Endereço*</label>
+<input required placeholder="Rua Medicamento N,10..."  type="text" id="endereço" name="endereço"/><br>
+
+<label for="compra">Cartão</label>
+<input class="formu" type="radio" name="compra" value="1">
+<label for="compra">Pix</label>
+<input id="radio" type="radio" name="compra" value="2"><br>
+
+<button class="formu">Comprar</button>

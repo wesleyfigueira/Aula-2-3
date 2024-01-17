@@ -1,0 +1,15 @@
+div{
+    background-color: pink;
+}
+#itens{
+    background-color: aqua;
+}
+p{
+    color: white;
+}
+ul{
+    background-color:purple ;
+}
+li{
+    list-style: upper-roman;
+}
